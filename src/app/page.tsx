@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { FaChartLine, FaCogs, FaDatabase, FaUsers } from "react-icons/fa";
 
 export default function Home() {
   const [stats] = useState({
@@ -43,17 +42,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">Our Impact</h2>
           <div className="flex justify-around">
             <div>
-              <FaDatabase className="text-blue-600 text-6xl mb-2" />
+              <div className="text-blue-600 text-6xl mb-2">[DB]</div>
               <h3 className="text-2xl font-semibold">{stats.models}</h3>
               <p className="text-gray-600">AI Models</p>
             </div>
             <div>
-              <FaUsers className="text-blue-600 text-6xl mb-2" />
+              <div className="text-blue-600 text-6xl mb-2">[Users]</div>
               <h3 className="text-2xl font-semibold">{stats.providers}</h3>
               <p className="text-gray-600">Providers</p>
             </div>
             <div>
-              <FaChartLine className="text-blue-600 text-6xl mb-2" />
+              <div className="text-blue-600 text-6xl mb-2">[Chart]</div>
               <h3 className="text-2xl font-semibold">{stats.apiCalls}</h3>
               <p className="text-gray-600">API Calls</p>
             </div>
@@ -67,17 +66,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">Features</h2>
           <div className="flex justify-around">
             <div className="max-w-xs">
-              <FaCogs className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">[Cogs]</div>
               <h3 className="text-2xl font-semibold mb-2">Easy Integration</h3>
               <p className="text-gray-600">Integrate with multiple AI providers effortlessly.</p>
             </div>
             <div className="max-w-xs">
-              <FaDatabase className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">[DB]</div>
               <h3 className="text-2xl font-semibold mb-2">Robust Models</h3>
               <p className="text-gray-600">Access a wide range of powerful AI models.</p>
             </div>
             <div className="max-w-xs">
-              <FaChartLine className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">[Chart]</div>
               <h3 className="text-2xl font-semibold mb-2">Scalable</h3>
               <p className="text-gray-600">Scale your applications with ease.</p>
             </div>
