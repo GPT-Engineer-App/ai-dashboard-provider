@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { FaDatabase, FaUsers, FaChartLine, FaCogs, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [stats, setStats] = useState({
@@ -61,18 +60,18 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Our Impact</h2>
           <div className="flex justify-around">
-            <div>
-              <FaDatabase className="text-blue-600 text-6xl mb-2" />
+            <div className="animate-on-scroll opacity-0 transition-opacity duration-1000">
+              <div className="text-blue-600 text-6xl mb-2">📊</div>
               <h3 className="text-2xl font-semibold">{stats.models}</h3>
               <p className="text-gray-600">AI Models</p>
             </div>
-            <div>
-              <FaUsers className="text-blue-600 text-6xl mb-2" />
+            <div className="animate-on-scroll opacity-0 transition-opacity duration-1000">
+              <div className="text-blue-600 text-6xl mb-2">👥</div>
               <h3 className="text-2xl font-semibold">{stats.providers}</h3>
               <p className="text-gray-600">Providers</p>
             </div>
-            <div>
-              <FaChartLine className="text-blue-600 text-6xl mb-2" />
+            <div className="animate-on-scroll opacity-0 transition-opacity duration-1000">
+              <div className="text-blue-600 text-6xl mb-2">📈</div>
               <h3 className="text-2xl font-semibold">{stats.apiCalls}</h3>
               <p className="text-gray-600">API Calls</p>
             </div>
@@ -86,17 +85,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">Features</h2>
           <div className="flex justify-around">
             <div className="max-w-xs transition-transform transform hover:scale-105">
-              <FaCogs className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">⚙️</div>
               <h3 className="text-2xl font-semibold mb-2">Easy Integration</h3>
               <p className="text-gray-600">Integrate with multiple AI providers effortlessly.</p>
             </div>
             <div className="max-w-xs transition-transform transform hover:scale-105">
-              <FaDatabase className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">📊</div>
               <h3 className="text-2xl font-semibold mb-2">Robust Models</h3>
               <p className="text-gray-600">Access a wide range of powerful AI models.</p>
             </div>
             <div className="max-w-xs transition-transform transform hover:scale-105">
-              <FaChartLine className="text-blue-600 text-6xl mb-4" />
+              <div className="text-blue-600 text-6xl mb-4">📈</div>
               <h3 className="text-2xl font-semibold mb-2">Scalable</h3>
               <p className="text-gray-600">Scale your applications with ease.</p>
             </div>
@@ -113,9 +112,9 @@ export default function Home() {
             <a href="#" className="hover:text-blue-400 transition-colors">Contact Us</a>
           </div>
           <div className="flex justify-center space-x-4">
-            <a href="#" className="hover:text-blue-400 transition-colors"><FaFacebook /></a>
-            <a href="#" className="hover:text-blue-400 transition-colors"><FaTwitter /></a>
-            <a href="#" className="hover:text-blue-400 transition-colors"><FaLinkedin /></a>
+            <a href="#" className="hover:text-blue-400 transition-colors">📘</a>
+            <a href="#" className="hover:text-blue-400 transition-colors">🐦</a>
+            <a href="#" className="hover:text-blue-400 transition-colors">🔗</a>
           </div>
           <p className="mt-4">&copy; 2023 OneAI. All rights reserved.</p>
         </div>
